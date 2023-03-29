@@ -1,3 +1,9 @@
-<h1>{{ item.item_name }}</h1>
-<p>{{ item.item_desc }}</p>
-<p>{{ item.item_price }}</p>
+{% extends 'food/base.html' %}
+
+        {% block body %}
+
+            <h1>{{ item.item_name }}</h1>
+            <p>{{ item.item_desc }}</p>
+            <p>{{ item.item_price }}</p>
+            
+       {% endblock %}
