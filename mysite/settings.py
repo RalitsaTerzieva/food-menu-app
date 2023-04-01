@@ -125,4 +125,5 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_REDIRECT_URL = 'food:index'
+LOGIN_URL = 'login'
 
