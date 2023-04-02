@@ -2,10 +2,32 @@
 
 {% block body %}
 
-<form method='POST'>
-    {% csrf_token %}
-    {{ form }}
-    <button type='submit' class='btn btn-success'>Signup</button>
-</form>
+<div class='container'>
+    <div class='row align-items-center vh-100'>
+        <div class='col-md-4 offset-md-4 mx-auto'>
+            <div class='card'>
+                <div class='card-header text-white bg-info'>
+                    <div class='card-title'>
+                        Register
+                    </div>
+                </div>
+                <div class='card-body'>
+                    <form method='POST'> 
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <div class='form-group'>
+                                {{ field.name }}
+                                <br/>
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+                        <br/>
+                        <button type='submit' class='btn-info'>Signup</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
