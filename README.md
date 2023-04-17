@@ -7,7 +7,7 @@ You can use this custom Django application to practice simple operations for cre
 
 ## Installation
 
-1. Clone th repository
+1. Clone the repository
 
 ```
 git clone https://github.com/RalitsaTerzieva/food-menu-app
